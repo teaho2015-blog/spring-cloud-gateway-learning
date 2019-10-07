@@ -19,7 +19,7 @@ spring cloud gateway目前是基于spring webflux上构建出来的（基于mvc�
 ## project reactor
 
 project reactor是spring框架的公司编写出来的响应式库，基于[github|reactive streams[3]][link:3]规范。
-当然有兴趣，也可以看下jdk9的flow api。
+btw有兴趣，也可以看下jdk9的flow api。
 
 ### 核心模型
 
