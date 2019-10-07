@@ -1,4 +1,8 @@
 
+## gateway相关类
+
+以下对一些gateway的filter按执行优先级作简单分析，之后会针对某些类作详细解读。
+
 - WeightCalculatorWebFilter   
 通过WeightRoutePredicateFactory的config计算权重，并在请求时将相关权重选择得出一个routeId做访问控制。
 
@@ -7,12 +11,12 @@ Central dispatcher for HTTP request handlers/controllers.
 文档将此类等同于MVC的DispatcherServlet
 
 - RoutePredicateHandlerMapping
-getHandlerInternal
-lookupRoute
+注意两个核心方法：
+getHandlerInternal 
+lookupRoute - 找到当前请求对应的route
 
 - FilteringWebHandler
 请求的filters启动执行
-
 
 - AdaptCachedBodyGlobalFilter
 清掉CACHED_REQUEST_BODY_KEY这个key，这个key是可能在predicate之类的为了重复读body所用的cache key
@@ -33,3 +37,4 @@ lookupRoute
 
 - NettyWriteResponseFilter
 把NettyRoutingFilter中设置的exchange属性CLIENT_RESPONSE_CONN_ATTR（即响应数据）返回。
+

@@ -1,6 +1,6 @@
 # spring-cloud-gateway-learning
 
-本文主要是spring cloud gateway及相关库源码学习，不打算分析太多用法。
+本文主要是spring cloud gateway及相关库原理或源码学习。
 
 ### License
 
