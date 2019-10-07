@@ -28,7 +28,7 @@ lookupRoute - 找到当前请求对应的route
 对于还没路由的route并且协议是forward的route，重写请求路径。
 
 - LoadBalancerClientFilter
-负载filter，匹配lb协议，然后，采用磨人的ribbon的分zone的轮询。而节点信息目前使用的nacos的serverList（没有塞zone信息，不支持ribbon的按zone负载）。
+负载filter，匹配lb协议，然后，采用默认的ribbon的分zone的轮询。而节点信息目前使用的nacos的serverList（没有塞zone信息，不支持ribbon的按zone负载）。
 在上面两个filter改了GATEWAY_REQUEST_URL_ATTR的exchange属性，如果需要加些自定义逻辑，可关注下这个。
 
 - NettyRoutingFilter
