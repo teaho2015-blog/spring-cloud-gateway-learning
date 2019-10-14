@@ -68,12 +68,20 @@ HttpHandler，组合出exchange的类。
 ## webflux应用启动
 
 webflux应用启动简单流程整理，仅列出reactive applicationContext相关的启动流程，及几个重要的bean的初始化。
-可对照上面请求执行流程看下。
+图中做了一些辅助性解释，可对照上面请求执行流程看下。
 ![webflux应用启动.png](webflux应用启动.png)
 
+## 线程模型
 
+TBD，待完成reactor netty的分析书写后再来分析webflux的。
 
+## 后记
 
+本文举出请求处理的实现类例子，基本是注解方式的，并没介绍函数式声明方式的（大同小异）。
 
+# reference
 
+[1] [spring framework|Web on Reactive Stack](https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html#webflux)
+[2] [spring framework|Web on Servlet Stack](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc)
+[3] [stackoverflow|Threading model of Spring WebFlux and Reactor](https://stackoverflow.com/questions/45019486/threading-model-of-spring-webflux-and-reactor)
 
