@@ -55,9 +55,9 @@ spring webflux 类似于Spring MVC，围绕前端controller模式————a c
 * HandlerAdapter 执行Handler，返回HandlerResult
 * HandlerResultHandler 处理HandlerResult
 
-具体到常用的注解声明的requestmapping，
+具体到常用的注解声明的@RequestMapping，
 首先，会在requestMapping中找到对应的HandlerMethod（可关注下该方法AbstractHandlerMethodMapping.lookupHandlerMethod(ServerWebExchange exchange)）
-然后，通过对应的能支持HandlerMethod的HandlerAdapter执行具体方法处理，HandlerResult
+然后，通过对应的能支持HandlerMethod的HandlerAdapter执行具体方法处理，得到HandlerResult
 最后，匹配到能处理该HandlerResult的HandlerResultHandler，结果处理
 
 #### HttpWebHandlerAdapter
