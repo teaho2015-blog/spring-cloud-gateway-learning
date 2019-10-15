@@ -77,11 +77,21 @@ TBD，待完成reactor netty的分析书写后再来分析webflux的。
 
 ## 后记
 
-本文举出请求处理的实现类例子，基本是注解方式的，并没介绍函数式声明方式的（大同小异）。
+本文举出请求处理的实现类例子，基本是注解方式的，并没介绍函数式声明方式（大同小异）。
 
 # reference
 
 [1] [spring framework|Web on Reactive Stack](https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html#webflux)
+
 [2] [spring framework|Web on Servlet Stack](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc)
+
 [3] [stackoverflow|Threading model of Spring WebFlux and Reactor](https://stackoverflow.com/questions/45019486/threading-model-of-spring-webflux-and-reactor)
+
+# 附录
+
+## webflux、mvc压测
+
+以前曾测试过webflux对比mvc的性能，测试报告如下：
+[gitlab|spring-mvc-webflux-benchmark](https://git.silvrr.com/hetl/spring-mvc-webflux-benchmark)
+
 
